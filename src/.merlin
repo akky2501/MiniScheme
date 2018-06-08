@@ -1,0 +1,18 @@
+B ../_build/default/src/.main.eobjs
+B /home/aki/.opam/system/lib/batteries
+B /home/aki/.opam/system/lib/bytes
+B /home/aki/.opam/system/lib/num
+B /home/aki/.opam/system/lib/ppx_deriving
+B /home/aki/.opam/system/lib/result
+B /usr/lib/ocaml
+B /usr/lib/ocaml/threads
+FLG -ppx '/home/aki/lab/tutorial/MiniScheme/_build/default/.ppx/ppx_deriving.std/ppx.exe --as-ppx'
+FLG -w -40
+S .
+S /home/aki/.opam/system/lib/batteries
+S /home/aki/.opam/system/lib/bytes
+S /home/aki/.opam/system/lib/num
+S /home/aki/.opam/system/lib/ppx_deriving
+S /home/aki/.opam/system/lib/result
+S /usr/lib/ocaml
+S /usr/lib/ocaml/threads

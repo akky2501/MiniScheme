@@ -1,0 +1,14 @@
+(jbuild_version 1)
+
+(executables
+ ((names (main))
+  (libraries (batteries))
+  (preprocess (pps (ppx_deriving.std)))
+  )
+  )
+
+(ocamllex (lexer))
+
+(menhir
+ ((flags ())
+  (modules (parser))))
