@@ -117,3 +117,7 @@
 
 (define-macro (let** vars . body)
 (let**-expander vars body))
+
+
+(define (sum n) (if (= n 0) n (+ n (sum (- n 1)))))
+(define (sumi n acc) (if (= n 0) acc (sumi (- n 1) (+ n acc))))

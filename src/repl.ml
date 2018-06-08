@@ -124,7 +124,10 @@ let repl () =
   try
     while true do
       try rep () with
-      | StopEval -> print_endline "stop evaluate."
+      | StopEval ->
+        Lexing.flush_input lexbuf;
+        print_endline "stop evaluate.";
+        flush stdout;
       | Parser.Error ->
         Lexing.flush_input lexbuf;
         print_endline "parse error.";
